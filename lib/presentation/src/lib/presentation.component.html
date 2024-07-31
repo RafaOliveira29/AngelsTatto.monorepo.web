@@ -1,0 +1,49 @@
+<div id="container">
+  <div class="logo-box">
+    <img [ngSrc]="logoUrl" alt="" width="210" height="123" priority />
+  </div>
+  <div class="content">
+    <img
+      *ngIf="tattoo"
+      [ngSrc]="'assets/presentation_screen/plastic-texture.svg'"
+      width="368"
+      height="340"
+      priority
+    />
+
+    <img
+      *ngIf="pirecing"
+      [ngSrc]="'assets/presentation_screen/plastic-texture.svg'"
+      width="368"
+      height="338"
+      priority
+    />
+
+    <div class="left-content">
+      <span [innerHTML]="sanitizedTitle" class="title"></span>
+
+      <span [innerHTML]="sanitizedSubTitle" class="subtitle"></span>
+
+      <div class="button-box">
+        <button
+          (click)="handleClick()"
+          [ngStyle]="{
+            background: buttonBackground,
+            color: buttonColor,
+            cursor: isClickable ? 'pointer' : 'default'
+          }"
+        >
+          {{ textButton }}
+        </button>
+      </div>
+    </div>
+
+    <img
+      *ngIf="dermato"
+      [ngSrc]="'assets/presentation_screen/plastic-texture.svg'"
+      width="368"
+      height="390"
+      priority
+    />
+  </div>
+</div>

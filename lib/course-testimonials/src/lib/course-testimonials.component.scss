@@ -1,0 +1,11 @@
+#container {
+  align-items: center;
+  // background: url("../../assets/background/background.svg") no-repeat;
+  //   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  min-height: 100vh;
+  justify-content: center;
+  padding: 24px 72px;
+}

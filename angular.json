@@ -1,0 +1,490 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "tattoo.web": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/tattoo.web",
+      "sourceRoot": "projects/tattoo.web/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/tattoo.web",
+            "index": "projects/tattoo.web/src/index.html",
+            "browser": "projects/tattoo.web/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/tattoo.web/tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "projects/tattoo.web/src/favicon.ico",
+              "projects/tattoo.web/src/assets"
+            ],
+            "styles": [
+              "projects/tattoo.web/src/styles.scss"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "tattoo.web:build:production"
+            },
+            "development": {
+              "buildTarget": "tattoo.web:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "tattoo.web:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/tattoo.web/tsconfig.spec.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "projects/tattoo.web/src/favicon.ico",
+              "projects/tattoo.web/src/assets"
+            ],
+            "styles": [
+              "projects/tattoo.web/src/styles.scss"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "dermato.web": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/dermato.web",
+      "sourceRoot": "projects/dermato.web/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/dermato.web",
+            "index": "projects/dermato.web/src/index.html",
+            "browser": "projects/dermato.web/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/dermato.web/tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "projects/dermato.web/src/favicon.ico",
+              "projects/dermato.web/src/assets"
+            ],
+            "styles": [
+              "projects/dermato.web/src/styles.scss"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "dermato.web:build:production"
+            },
+            "development": {
+              "buildTarget": "dermato.web:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "dermato.web:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/dermato.web/tsconfig.spec.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "projects/dermato.web/src/favicon.ico",
+              "projects/dermato.web/src/assets"
+            ],
+            "styles": [
+              "projects/dermato.web/src/styles.scss"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "body_pirecing.web": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/body_pirecing.web",
+      "sourceRoot": "projects/body_pirecing.web/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/body_pirecing.web",
+            "index": "projects/body_pirecing.web/src/index.html",
+            "browser": "projects/body_pirecing.web/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/body_pirecing.web/tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "projects/body_pirecing.web/src/favicon.ico",
+              "projects/body_pirecing.web/src/assets"
+            ],
+            "styles": [
+              "projects/body_pirecing.web/src/styles.scss"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "body_pirecing.web:build:production"
+            },
+            "development": {
+              "buildTarget": "body_pirecing.web:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "body_pirecing.web:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/body_pirecing.web/tsconfig.spec.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "projects/body_pirecing.web/src/favicon.ico",
+              "projects/body_pirecing.web/src/assets"
+            ],
+            "styles": [
+              "projects/body_pirecing.web/src/styles.scss"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "presentation": {
+      "projectType": "library",
+      "root": "projects/presentation",
+      "sourceRoot": "projects/presentation/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/presentation/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/presentation/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/presentation/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/presentation/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    },
+    "highlight": {
+      "projectType": "library",
+      "root": "projects/highlight",
+      "sourceRoot": "projects/highlight/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/highlight/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/highlight/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/highlight/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/highlight/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    },
+    "ExclusiveFeatures": {
+      "projectType": "library",
+      "root": "projects/exclusive-features",
+      "sourceRoot": "projects/exclusive-features/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/exclusive-features/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/exclusive-features/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/exclusive-features/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/exclusive-features/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    },
+    "course-testimonials": {
+      "projectType": "library",
+      "root": "projects/course-testimonials",
+      "sourceRoot": "projects/course-testimonials/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/course-testimonials/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/course-testimonials/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/course-testimonials/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/course-testimonials/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    },
+    "completeTraining": {
+      "projectType": "library",
+      "root": "projects/complete-training",
+      "sourceRoot": "projects/complete-training/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/complete-training/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/complete-training/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/complete-training/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/complete-training/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    },
+    "map-screen": {
+      "projectType": "library",
+      "root": "projects/map-screen",
+      "sourceRoot": "projects/map-screen/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/map-screen/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/map-screen/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/map-screen/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/map-screen/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": false
+  }
+}
