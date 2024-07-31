@@ -6,12 +6,14 @@ import { ExclusiveFeaturesComponent } from '../../../../lib/exclusive-features/s
 import { CourseTestimonialsComponent } from '../../../../lib/course-testimonials/src/public-api';
 import { MapScreenComponent } from '../../../../lib/map-screen/src/public-api';
 import { ProgramContentComponent } from '../../../../lib/program-content/src/public-api';
+import { FooterComponent } from '../../../../lib/footer/src/public-api';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     RouterOutlet,
+    FooterComponent,
     MapScreenComponent,
     PresentationComponent,
     ProgramContentComponent,

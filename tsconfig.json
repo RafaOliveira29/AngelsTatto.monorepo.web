@@ -26,6 +26,9 @@
       "course-testimonials": [
         "./dist/course-testimonials"
       ],
+      "footer": [
+        "./dist/footer"
+      ],
       "highlight": [
         "./dist/highlight"
       ],
