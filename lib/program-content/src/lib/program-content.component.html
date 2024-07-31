@@ -1,0 +1,21 @@
+<div id="container">
+  <div class="top-content">
+    <div class="titles-box">
+      <span class="title" [innerHTML]="sanitizedTitle"></span>
+
+      <span class="subtitle">{{ subtitle }}</span>
+    </div>
+  </div>
+
+  <div class="content">
+    <span>
+      {{ description.title }}
+    </span>
+
+    <ul class="text" *ngFor="let text of description.list">
+      <li>
+        {{ text }}
+      </li>
+    </ul>
+  </div>
+</div>

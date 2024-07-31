@@ -34,6 +34,9 @@
       ],
       "presentation": [
         "./dist/presentation"
+      ],
+      "program-content": [
+        "./dist/program-content"
       ]
     },
     "target": "ES2022",
