@@ -68,6 +68,10 @@ export class HomeComponent {
   subtitleProgramContent = Consts.programContent.texts.subtitle;
 
   //mapScreen
+  wppIcon = Consts.mapScreen.urls.wppIcon;
+  starIcon = Consts.mapScreen.urls.starIcon;
+  mapImageUrl = Consts.mapScreen.urls.mapUrl;
+  atSignIcon = Consts.mapScreen.urls.atSignIcon;
   addressTextMapScreen = Consts.mapScreen.texts.address;
 
   constructor(

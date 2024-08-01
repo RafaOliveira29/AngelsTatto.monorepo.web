@@ -53,14 +53,13 @@
 ></lib-program-content>
 
 <lib-map-screen
+  [wppIcon]="wppIcon"
+  [starIcon]="starIcon"
+  [atSignIcon]="atSignIcon"
+  [mapImageUrl]="mapImageUrl"
   [highlightColor]="highlightColor"
+  [addressText]="addressTextMapScreen"
   [sanitizedTextFn]="sanitizedMapScreen"
-  mapImageUrl="assets/map_screen/map.svg"
-  wppIcon="assets/map_screen/icons/wpp.svg"
-  starIcon="assets/map_screen/icons/star.svg"
-  atSignIcon="assets/map_screen/icons/at_sign.svg"
-  title="ainda tem dúvidas que essa é a oportunidade certa?"
-  addressText="Av. Orosimbo Maia, 2075 - Cambuí Campinas/SP | 13024-035"
 ></lib-map-screen>
 
 <lib-footer [logoUrl]="logoUrl" [background]="highlightColor"></lib-footer>
