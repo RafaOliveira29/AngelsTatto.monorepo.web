@@ -1,0 +1,64 @@
+<div id="container">
+  <div class="left-content">
+    <div class="top-text">
+      <span class="text1" [ngStyle]="{ color: highlightColor }">
+        {{ text1 }}
+      </span>
+
+      <span [innerHTML]="sanitizedTextFn()" class="text2"></span>
+    </div>
+
+    <div class="bottom-content">
+      <div class="image-box">
+        <img [ngSrc]="imageUrl" alt="" width="382" height="790" priority />
+
+        <div class="tag">ALUNO TATUA 3 PESSOAS</div>
+      </div>
+
+      <div class="black-box">
+        <div class="black-box-title" [ngStyle]="{ background: highlightColor }">
+          CONTEÚDO
+        </div>
+
+        <span>
+          {{ contentBoxText1 }}
+        </span>
+
+        <span>
+          {{ contentBoxText2 }}
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="right-content">
+    <div class="black-box">
+      <div class="black-box-title" [ngStyle]="{ background: highlightColor }">
+        PERÍODO
+      </div>
+
+      <span>
+        {{ periodBoxText1 }}
+      </span>
+
+      <div class="discount-bullet">{{ discountText }}</div>
+    </div>
+
+    <div class="black-box">
+      <span>
+        {{ periodBoxText2 }}
+      </span>
+
+      <button class="buy-now-button">comprar agora</button>
+    </div>
+  </div>
+
+  <img
+    [ngSrc]="imageBottomUrl"
+    class="vector"
+    alt=""
+    width="1680"
+    height="166"
+    priority
+  />
+</div>

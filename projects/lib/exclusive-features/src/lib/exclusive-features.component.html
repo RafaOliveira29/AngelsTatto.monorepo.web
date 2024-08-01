@@ -1,0 +1,39 @@
+<div id="container">
+  <div class="top">
+    <img [ngSrc]="logoUrl" alt="" width="210" height="123" priority />
+
+    <span class="description-box">
+      {{ descriptionText }}
+    </span>
+  </div>
+
+  <div class="content">
+    <div class="left-content">
+      <div class="titles">
+        <span>EXCLUSIVIDADES ANGELS TATTOO</span>
+        <span>EXCLUSIVIDADES ANGELS TATTOO</span>
+        <span>EXCLUSIVIDADES ANGELS TATTOO</span>
+      </div>
+
+      <div class="list-exclusives-box">
+        <span [innerHTML]="sanitizedListExclusives()"></span>
+      </div>
+    </div>
+
+    <div class="right-content">
+      <img
+        [ngSrc]="imageUrl"
+        [width]="imageWidth"
+        [height]="imageHeight"
+        priority
+      />
+
+      <div
+        class="bullet-description"
+        [ngStyle]="{ background: highlightColor }"
+      >
+        {{ bulletDescriptionText }}
+      </div>
+    </div>
+  </div>
+</div>

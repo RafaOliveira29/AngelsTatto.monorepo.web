@@ -10,10 +10,11 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
   styleUrl: 'program-content.component.scss',
 })
 export class ProgramContentComponent {
-  @Input() description!: {
+  @Input() descriptions!: {
     title: string;
     list: string[];
-  };
+    finalText?: string;
+  }[];
   @Input() title!: string;
   @Input() subtitle!: string;
   @Input() highlightColor!: string;

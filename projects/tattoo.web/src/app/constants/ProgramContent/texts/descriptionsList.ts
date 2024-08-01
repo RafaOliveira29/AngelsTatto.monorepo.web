@@ -1,0 +1,175 @@
+export const programContentDescription = [
+  {
+    title: 'Introdução',
+    list: [
+      'Historia da Tatuagem',
+      'Categorias e suas Regras',
+      'Diferença entre Biqueiras Descartáveis e Esterilizadas, Máquinas Rotativas e Bobinas, Tatuagem e Maquiagem Definitiva',
+      'Tebori',
+    ],
+  },
+  {
+    title: 'Anatomia e Fisiologia da Pele',
+    list: [
+      'Composição de cada Camada da Pele',
+      'Diferença de Melanina entre Homens e Mulheres',
+      'Sensores da Dor',
+      'A Importância do Colágeno',
+      'Reações Alérgicas',
+      'Tatuagem sobre Cicatriz',
+      'Tatuagem nos Dedos',
+      'Quelóide',
+      'Complicações Decorrentes',
+      'Tatuagem Fixada no Organismo',
+      'Regiões do Corpo',
+      'Retoque de Tatuagem ',
+      'Quem pode ser Tatuado?',
+      'Problemas de Tatuagem nas Pernas e Pés',
+    ],
+  },
+  {
+    title: 'Biossegurança',
+    list: [
+      'Vacina de Hepatite B e Tétano',
+      'Limpeza Correta do Estúdio',
+      'Ventilador na Sala de Procedimento',
+      'Proibição do Glutaraldeido 2%',
+      'Ácido Peracético e sua Aplicabilidade',
+      'EPI’s (Equipamento de Segurança)',
+      'Ultrasson',
+      'Autoclave',
+      'Teste Biológico para a Autoclave',
+      'Assepsia da Pele',
+      'Proibição da Estufa',
+    ],
+  },
+  {
+    title: 'Materiais para Tatuar',
+    list: [
+      'Materiais Necessários',
+      'Tamanho e Utilização de Batoques',
+      'Vaselina',
+      'Gel de Ultrasson',
+      'Manteigas de Cacau',
+      'Materiais de Auxilio e Acalmante da Pele',
+    ],
+  },
+  {
+    title: 'Máquina de Tatuagem',
+    list: [
+      'Apresentação',
+      'Maquina Rotativa',
+      'Analisando Bobinas, Capacitor e seus Componentes',
+      'Funcionamento Correto da Máquina',
+      'Montagem e Regulagem da Máquina',
+      'Manutenção da Máquina',
+      'Regulagem Híbrida',
+      'Regulagem para Traço, Pintura e Sombreado',
+    ],
+  },
+  {
+    title: 'Fonte e Pedal',
+    list: [
+      'Qualidade da Fonte',
+      'Fonte Digital e Analógica',
+      'Tipos de pedais e sua Funcionalidade',
+    ],
+  },
+  {
+    title: 'Agulhas',
+    list: [
+      'Agulhas: Espessura, Registro ANVISA',
+      'Traço',
+      'Buchas e suas Aplicações',
+      'Magnum MS e suas Aplicações',
+      'Magnum e suas Aplicações',
+      'Boldline',
+      'Agulhas Extras',
+    ],
+  },
+  {
+    title: 'Biqueiras',
+    list: [
+      'Biqueiras Descartáveis e Esterilizadas',
+      'Biqueiras de Grip Grosso e Grip Fino',
+    ],
+  },
+  {
+    title: 'Decalque',
+    list: [
+      'Decalque em Linha Reta',
+      'Decalque em Folha Sulfite, Vegetal e Seda',
+      'Lápis Cópia',
+      'Stencil/Papel Hectográfico',
+      'Cortes Estratégicos',
+      'Transferidores (Líquido, Bastões e Álcool)',
+    ],
+  },
+  {
+    title: 'Tintas e Pigmentos',
+    list: [
+      'Melhores Marcas',
+      'Tintas Registradas na ANVISA',
+      'Preparo da Tinta',
+      'Armazenamento da Tinta',
+      'Tintas à Base de Água e de Outros Solventes',
+      'Tinta para Peles Negras',
+      'Mistura de Tinta para Novos Tons',
+    ],
+  },
+  {
+    title: 'Como Traçar',
+    list: [
+      'Aplicação para um Traço Perfeito',
+      'Traço em Linha Reta',
+      'Posicionamento da Mão, Máquina e Movimento',
+      'Exercícios de Traço',
+      'Aperfeiçoamento do Traço',
+    ],
+  },
+  {
+    title: 'Como Pintar?',
+    list: [
+      'Roda das Cores',
+      'Tom da Pele',
+      'Degrade',
+      'Exercício de Aplicação, Posicionamento, Inclinação e Movimento',
+    ],
+  },
+  {
+    title: 'Preto Íntegro',
+    list: [
+      'Maori, Samoan e Tribal sem Falhas',
+      'Aplicação do Preto',
+      'Diluição',
+      "Marca D'Água",
+    ],
+  },
+  {
+    title: 'Sombreamento',
+    list: [
+      'Posicionamento da Máquina, Mão e Movimentos',
+      'Agulhas Corretas',
+      'Luz e Contra-Luz',
+      'Sombreamento Sujo e Limpo',
+      'Degrade de Tons',
+      'Suavização de Passagem',
+      'Preparo da Tinta',
+      'Diluidores',
+    ],
+  },
+  {
+    title: 'Aquarelado',
+    list: ['Técnica de Aplicação e Elaboração'],
+  },
+  {
+    title: 'Pontilhismo',
+    list: ['Pontilhismo', 'Pontilhismo Escovado'],
+  },
+  {
+    title: '',
+    list: [],
+    finalText:
+      'Certificação válida Brasil e exterior, e caso queira pode pegar diploma do MEC através da gente com parceria com a faculdade de Brasília.',
+  },
+];
