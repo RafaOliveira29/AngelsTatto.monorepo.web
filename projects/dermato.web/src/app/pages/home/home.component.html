@@ -1,0 +1,65 @@
+<lib-presentation
+  [dermato]="true"
+  imageWidth="368"
+  imageHeight="340"
+  [logoUrl]="logoUrl"
+  [isClickable]="false"
+  [buttonColor]="white"
+  [textButton]="textButton"
+  [highlightColor]="highlightColor"
+  [buttonBackground]="highlightColor"
+  [sanitizedTitleFn]="sanitizedTitleFn"
+  [sanitizedSubtitleFn]="sanitizedSubtitleFn"
+>
+</lib-presentation>
+
+<lib-ExclusiveFeatures
+  imageWidth="450"
+  imageHeight="732"
+  [logoUrl]="logoUrl"
+  [highlightColor]="highlightColor"
+  [imageUrl]="mainImageExclusiveFeatures"
+  [descriptionText]="descriptionExclusiveFeatures"
+  [sanitizedListExclusives]="sanitizedListExclusives"
+  [bulletDescriptionText]="bulletDescriptionExclusiveFeatures"
+></lib-ExclusiveFeatures>
+
+<lib-course-testimonials
+  imageWidth="450"
+  [videos]="videos"
+  [highlightColor]="highlightColor"
+  [vectorUrl]="vectorUrlCourseTestemunials"
+  [sanitizedTitleFn]="sanitizedCourseTestimonials"
+></lib-course-testimonials>
+
+<lib-complete-training
+  [imageUrl]="imageUrl"
+  [periodBoxText1]="periodBox1"
+  [periodBoxText2]="periodBox2"
+  [text1]="unmissableOpportunity"
+  [contentBoxText1]="contentBox1"
+  [contentBoxText2]="contentBox2"
+  [highlightColor]="highlightColor"
+  [imageBottomUrl]="imageBottomUrl"
+  [sanitizedTextFn]="sanitizedCompleteTraining"
+  [discountText]="discountTextCompleteTraining"
+></lib-complete-training>
+
+<lib-program-content
+  [highlightColor]="highlightColor"
+  [subtitle]="subtitleProgramContent"
+  [descriptions]="programContenDescription"
+  [sanitizedTextFn]="sanitizedProgramContent"
+></lib-program-content>
+
+<lib-map-screen
+  [wppIcon]="wppIcon"
+  [starIcon]="starIcon"
+  [atSignIcon]="atSignIcon"
+  [mapImageUrl]="mapImageUrl"
+  [highlightColor]="highlightColor"
+  [addressText]="addressTextMapScreen"
+  [sanitizedTextFn]="sanitizedMapScreen"
+></lib-map-screen>
+
+<lib-footer [logoUrl]="logoUrl" [background]="highlightColor"></lib-footer>

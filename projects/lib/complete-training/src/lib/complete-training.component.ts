@@ -20,5 +20,6 @@ export class CompleteTrainingComponent {
   @Input() highlightColor!: string;
   @Input() contentBoxText1!: string;
   @Input() contentBoxText2!: string;
+  @Input() tattooPage: boolean = false;
   @Input() sanitizedTextFn!: () => SafeHtml;
 }
