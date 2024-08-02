@@ -18,4 +18,5 @@ export class ExclusiveFeaturesComponent {
   @Input() descriptionText!: string;
   @Input() bulletDescriptionText!: string;
   @Input() sanitizedListExclusives!: () => SafeHtml;
+  // @Input() sanitizedListExclusives!: SafeHtml[];
 }

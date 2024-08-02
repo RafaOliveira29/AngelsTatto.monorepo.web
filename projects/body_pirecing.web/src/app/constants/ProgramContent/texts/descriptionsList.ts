@@ -1,0 +1,27 @@
+export const programContentDescription = [
+  {
+    title: '',
+    list: [
+      'Historia do Piercing',
+      'Anatomia e Fisiologia da Pele',
+      'Cartilagem: Definição e seus Cuidados',
+      'Vantagem da Aplicação Free Hand',
+      'Cicatrização',
+      'Aplicação de Anestésico',
+      'Cicatrização com Spray Antisséptico',
+      'Biossegurança (Assepsia, Limpeza do Estúdio e Autoclave)',
+      'Tipos de Cateteres e Agulhas Americanas: Numeração e Aplicabilidade',
+      'Como Escolher o Cateter?',
+      'Joia Ideal para cada Local do Corpo ',
+      'Demarcação de Áreas para Aplicação',
+      'Montagem da Mesa de Trabalho',
+      'Aplicação de Piercings em Diversas Áreas, em Órgãos Artificiais',
+      'Aplicação de Piercings no Estúdio (Realizados em Pessoas Acompanhadas por nossos Professores)',
+      'Normas e Leis para Montagem de Estúdios',
+      'Normas da Vigilância Sanitária e Cadastro de Clientes',
+      'Ficha do Cliente',
+      'Proibições ao Body Piercing',
+      'Obrigações do Body Piercing',
+    ],
+  },
+];

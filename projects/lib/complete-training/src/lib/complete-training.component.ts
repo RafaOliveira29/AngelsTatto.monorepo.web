@@ -13,7 +13,11 @@ export class CompleteTrainingComponent {
   @Input() text1!: string;
   @Input() text2!: string;
   @Input() imageUrl!: string;
-  @Input() discountText!: string;
+  @Input() discount!: {
+    percentage: string;
+    oldValue: string;
+    newValue: string;
+  };
   @Input() imageBottomUrl!: string;
   @Input() periodBoxText1!: string;
   @Input() periodBoxText2!: string;

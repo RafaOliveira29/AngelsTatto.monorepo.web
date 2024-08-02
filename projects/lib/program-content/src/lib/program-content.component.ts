@@ -11,7 +11,7 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 })
 export class ProgramContentComponent {
   @Input() descriptions!: {
-    title: string;
+    title?: string;
     list: string[];
     finalText?: string;
   }[];

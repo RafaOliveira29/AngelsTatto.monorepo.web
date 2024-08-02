@@ -41,7 +41,19 @@
         {{ periodBoxText1 }}
       </span>
 
-      <div class="discount-bullet">{{ discountText }}</div>
+      <div class="discount-bullet">
+        <span> {{ discount.percentage }} off </span>
+
+        <span class="old-value">
+          <s>
+            {{ discount.oldValue }}
+          </s>
+        </span>
+
+        <span>
+          {{ discount.newValue }}
+        </span>
+      </div>
     </div>
 
     <div class="black-box">

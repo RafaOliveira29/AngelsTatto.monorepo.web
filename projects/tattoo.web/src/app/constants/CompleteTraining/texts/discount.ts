@@ -1,1 +1,5 @@
-export const discount = '29% off R$6.999 R$4.900';
+export const discount = {
+  percentage: '29%',
+  oldValue: 'R$6.999',
+  newValue: 'R$4.900',
+};

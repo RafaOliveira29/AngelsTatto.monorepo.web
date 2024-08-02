@@ -125,8 +125,9 @@
   bottom: 0;
   color: #ffd028;
   display: flex;
-  font-size: 1.8rem;
   font-weight: 600;
+  flex-direction: column;
+  gap: 0.5em;
   height: 10rem;
   justify-content: center;
   padding: 36px;
@@ -136,6 +137,14 @@
   transform: translate(64%, 64%);
   width: 10rem;
   z-index: 1;
+
+  .old-value {
+    font-size: clamp(1rem, 1vw + 1rem, 1.7rem);
+  }
+
+  span {
+    font-size: clamp(1rem, 1vw + 1rem, 2rem);
+  }
 }
 
 .buy-now-button {
@@ -145,8 +154,9 @@
   color: #fff;
   cursor: pointer;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 24px 40px;
+  text-transform: uppercase;
 }
 
 .vector {
@@ -205,6 +215,8 @@
   .discount-bullet {
     bottom: 0;
     border-radius: 10px;
+    flex-direction: row;
+    font-size: clamp(1rem, 2vw + 2rem, 3rem);
     left: 0;
     padding: 0px;
     transform: translate(-2.5%, 50%);

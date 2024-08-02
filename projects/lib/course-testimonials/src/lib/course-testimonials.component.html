@@ -1,7 +1,9 @@
 <div id="container">
-  <span class="title" [innerHTML]="sanitizedTitleFn()">
-    {{ title }}
-  </span>
+  <div class="text-top">
+    <span>Depoimentos do curso</span>
+
+    <span class="title" [innerHTML]="sanitizedTitleFn()"></span>
+  </div>
 
   <div class="slider">
     <button class="nav-button left" (click)="prevVideo()">
@@ -11,6 +13,11 @@
     <video #videoPlayer width="600" controls [src]="videos[currentVideo]">
       <source [src]="videos[currentVideo]" type="video/mp4" />
     </video>
+
+    <span class="text"
+      >Confira os
+      <p [ngStyle]="{ color: highlightColor }">resultados</p></span
+    >
 
     <button class="nav-button right" (click)="nextVideo()">
       <span class="material-icons">arrow_forward</span>

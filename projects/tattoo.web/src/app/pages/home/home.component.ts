@@ -61,7 +61,7 @@ export class HomeComponent {
   contentBox1 = Consts.completeTraining.texts.contentBox1;
   contentBox2 = Consts.completeTraining.texts.contentBox2;
   completeTraining = Consts.completeTraining.texts.completeTraining;
-  discountTextCompleteTraining = Consts.completeTraining.texts.discount;
+  discountCompleteTraining = Consts.completeTraining.texts.discount;
   unmissableOpportunity = Consts.completeTraining.texts.unmissableOpportunity;
 
   //programContent
@@ -79,7 +79,7 @@ export class HomeComponent {
     private highlightService: HighlightService
   ) {}
 
-  getSanitizedHighlightedText(type: string): SafeHtml {
+  getSanitizedHighlightedText(type: string, text?: string): SafeHtml {
     const highlightedText = this.highlightService.highlightText(
       type,
       this.highlightColor
@@ -98,6 +98,12 @@ export class HomeComponent {
   sanitizedListExclusives = (): SafeHtml => {
     return this.getSanitizedHighlightedText('exclusiveFeatures');
   };
+
+  // getSanitizedListExclusives = (): SafeHtml[] => {
+  //   return Consts.exclusiveFeatures.texts.highlightList.map((item) =>
+  //     this.getSanitizedHighlightedText('exclusiveFeatures', item.text)
+  //   );
+  // };
 
   sanitizedCourseTestimonials = (): SafeHtml => {
     return this.getSanitizedHighlightedText('courseTestimonials');
