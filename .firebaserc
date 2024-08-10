@@ -1,0 +1,17 @@
+{
+  "targets": {
+    "angelstattoo-a6408": {
+      "hosting": {
+        "tattoo-web": [
+          "tattoo-web-b7300"
+        ],
+        "dermato-web": [
+          "dermato-web"
+        ],
+        "body-piercing-web": [
+          "body-piercing-web"
+        ]
+      }
+    }
+  }
+}
