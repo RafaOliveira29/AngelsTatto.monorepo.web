@@ -4,7 +4,7 @@
   background-position: center 104%;
   background-size: 100%;
   display: flex;
-  gap: 5em;
+  gap: 2em;
   justify-content: center;
   min-height: 100vh;
   padding: 10vh 0;
@@ -18,7 +18,7 @@
   flex-direction: column;
   gap: 32px;
   min-height: 90vh;
-  width: calc(55% - 64px);
+  width: 50%;
 
   .top-text {
     display: flex;
@@ -115,7 +115,7 @@
   gap: 64px;
   height: 90vh;
   min-height: 90vh;
-  width: calc(30% - 64px);
+  width: 30%;
 }
 
 .discount-bullet {
