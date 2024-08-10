@@ -175,12 +175,12 @@
   }
 }
 
-@media (max-width: 1650px) {
+@media (max-width: 1550px) {
   #container {
     align-items: center;
     background-position: center 101%;
     flex-direction: column;
-    gap: 0px;
+    gap: 1em;
   }
 
   .left-content {
@@ -214,13 +214,13 @@
 
   .discount-bullet {
     bottom: 0;
-    border-radius: 10px;
+    border-radius: 0;
     flex-direction: row;
     font-size: clamp(1rem, 2vw + 2rem, 3rem);
     left: 0;
     padding: 0px;
-    transform: translate(-2.5%, 50%);
-    width: 105%;
+    transform: translate(0%, 50%);
+    width: 100%;
   }
 }
 
