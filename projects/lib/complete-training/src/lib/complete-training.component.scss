@@ -4,7 +4,7 @@
   background-position: center 104%;
   background-size: 100%;
   display: flex;
-  gap: 2em;
+  gap: 32px;
   justify-content: space-around;
   min-height: 100vh;
   padding: 10vh 0;
@@ -18,7 +18,7 @@
   flex-direction: column;
   gap: 32px;
   min-height: 90vh;
-  width: 45%;
+  width: 55%;
 
   .top-text {
     display: flex;
